@@ -7,6 +7,9 @@ body {
   background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .paper {
   background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
@@ -58,10 +61,84 @@ img {
 /*   filter: hue-rotate(200deg); */
 }
 p {
-  font-family: 'Zeyada';
+  /* font-family: 'Zeyada'; */
   font-size: 50px;
   color: rgb(0,0,100);
   opacity: 0.75;
   user-select: none;
-  
+  font-weight: 600;
+}
+
+.btn {
+  /* background-color: #fa8072; */
+  background-color: #89fa72;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  padding: 1em 2em;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f97263;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 50, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  outline:0;
+}
+
+.btn:focus-visible {
+  outline:2px solid #f97263;
+  outline-offset: 5px;
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 12px -2px inset rgba(50, 50, 50, 0.25);
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #e75480;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  color: #e75480;
+}
+
+.popup-content p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e75480;
 }
